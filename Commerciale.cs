@@ -17,11 +17,12 @@ namespace Gestion
         public string Nom { get => nom; set => nom = value; }
         public string Prenom { get => prenom; set => prenom = value; }
         public int AnneeNaissance { get => anneeNaissance; set => anneeNaissance = value; }
-        public Commerciale(string nomC, string prenomC, int anneeNaissanceC)
+        public Commerciale(string nomC, string prenomC, int anneeNaissanceC, Categorie categorieC)
         {
             this.nom = nomC;
             this.prenom = prenomC;
             this.anneeNaissance = anneeNaissanceC;
+            this.categorie = categorieC;
         }
 
         public double calculAge()
